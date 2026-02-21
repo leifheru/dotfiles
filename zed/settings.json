@@ -1,0 +1,29 @@
+{
+  "theme": "One Dark",
+  "autosave": "on_focus_change",
+  "base_keymap": "VSCode",
+  "disable_ai": true,
+  "cursor_blink": false,
+  "cursor_shape": "underline",
+  "vim_mode": true,
+  "tab_bar": {
+    "show": false,
+    "show_nav_history_buttons": true,
+    "show_tab_bar_buttons": true,
+  },
+  "scrollbar": {
+    "show": "never",
+  },
+  "gutter": {
+    "line_numbers": true,
+    "runnables": true,
+    "breakpoints": true,
+    "folds": false,
+    "min_line_number_digits": 4,
+  },
+  "auto_install_extensions": {
+    "html": true,
+    "dockerfile": true,
+    "docker-compose": false,
+  },
+}
