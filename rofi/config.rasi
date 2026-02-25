@@ -1,0 +1,72 @@
+/* Reset default theme */
+@theme "/dev/null"
+
+configuration {
+    modi:                "drun,run";
+    show-icons:          false;
+    display-drun:        "";
+    display-run:         "";
+    drun-display-format: "{name}";
+    font:                "JetBrains Mono 11";
+}
+
+* {
+    background-color: #000000;
+    text-color:       #555555;
+    border-color:     #1a1a1a;
+}
+
+window {
+    width:            360px;
+    background-color: #000000;
+    border:           1px solid;
+    border-color:     #1a1a1a;
+    border-radius:    0px;
+    padding:          16px;
+}
+
+mainbox {
+    background-color: transparent;
+    children:         [ inputbar, listview ];
+}
+
+inputbar {
+    background-color: transparent;
+    padding:          8px 0;
+    border:           0 0 1px 0;
+    border-color:     #1a1a1a;
+    children:         [ entry ];
+}
+
+entry {
+    background-color: transparent;
+    text-color:       #ffffff;
+    placeholder:      "";
+}
+
+listview {
+    columns:          1;
+    lines:            10;
+    background-color: transparent;
+    fixed-height:     true;
+    spacing:          0;
+    padding:          8px 0 0 0;
+    border:           0;
+}
+
+element {
+    padding:          6px 4px;
+    background-color: transparent;
+    text-color:       #555555;
+    border-radius:    0px;
+}
+
+element selected.normal {
+    background-color: #1a1a1a;
+    text-color:       #ffffff;
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       inherit;
+}

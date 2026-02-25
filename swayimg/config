@@ -1,0 +1,41 @@
+# ─── Swayimg Config (Vim Keybindings) ───
+
+[general]
+mode = viewer
+
+[viewer]
+window = #000000
+scale = fit
+antialiasing = mks13
+
+[keys.viewer]
+q = exit
+Escape = exit
+
+h = prev_file
+l = next_file
+j = next_file
+k = prev_file
+
+equal = zoom +10
+plus = zoom +10
+minus = zoom -10
+0 = zoom fit
+
+Shift+h = step_left 5
+Shift+l = step_right 5
+Shift+j = step_down 5
+Shift+k = step_up 5
+
+r = rotate_right
+Shift+r = rotate_left
+f = flip_horizontal
+Shift+f = flip_vertical
+
+i = help
+a = zoom real
+w = zoom fit
+e = zoom fill
+d = animation
+
+space = mode slideshow

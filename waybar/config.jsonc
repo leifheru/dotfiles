@@ -1,0 +1,59 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 28,
+    "spacing": 0,
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "custom/tasks",
+        "custom/pomodoro",
+        "pulseaudio",
+        "network",
+        "battery"
+    ],
+    "hyprland/workspaces": {
+        "format": "{id}",
+        "on-click": "activate"
+    },
+    "clock": {
+        "format": "{:%H:%M}",
+        "format-alt": "{:%a %d %b}",
+        "tooltip-format": "{:%Y-%m-%d %A}"
+    },
+    "pulseaudio": {
+        "format": "vol {volume}",
+        "format-muted": "mute",
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+    },
+    "network": {
+        "format-wifi": "{essid}",
+        "format-ethernet": "net",
+        "format-disconnected": "---",
+        "tooltip-format": "{ifname}: {ipaddr}"
+    },
+    "battery": {
+        "format": "{capacity}",
+        "format-charging": "{capacity}+",
+        "states": {
+            "warning": 20,
+            "critical": 10
+        }
+    },
+    "custom/pomodoro": {
+        "exec": "~/Desktop/dotfiles/scripts/pomodoro.sh status",
+        "return-type": "json",
+        "interval": 1,
+        "format": "{}"
+    },
+    "custom/tasks": {
+        "exec": "~/Desktop/dotfiles/scripts/task-count.sh",
+        "return-type": "json",
+        "interval": 30,
+        "format": "{}"
+    }
+}

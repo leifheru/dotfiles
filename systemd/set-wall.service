@@ -1,0 +1,8 @@
+[Unit]
+Description=Set random wallpaper
+After=graphical-session.target
+
+[Service]
+Type=oneshot
+Environment=HYPRLAND_INSTANCE_SIGNATURE=
+ExecStart=/bin/bash -c 'export HYPRLAND_INSTANCE_SIGNATURE=$(ls -t /tmp/hypr/ 2>/dev/null | head -1) && exec %h/Desktop/dotfiles/scripts/set-wall.sh'

@@ -1,0 +1,8 @@
+[Unit]
+Description=Daily reminder notification
+
+[Service]
+Type=oneshot
+ExecStart=%h/Desktop/dotfiles/scripts/remind.sh
+Environment=DISPLAY=:0
+Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus

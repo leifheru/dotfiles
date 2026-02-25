@@ -1,0 +1,10 @@
+# Obsidian
+.obsidian/workspace.json
+
+# Daily notes
+wiki/daily/
+
+# Temporary files
+*~
+*.swp
+*.swo
